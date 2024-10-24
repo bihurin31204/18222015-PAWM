@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pilih Topik Simulasi - Virtual Lab Fisika</title>
+    <!-- Link ke file CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Skrip MathJax untuk notasi matematika -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Meta Tag Responsif -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="topics-page">
+
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo">V-<span>Lab Fisika</span></a>
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="topics.html">Simulasi</a>
+        </nav>
+    </header>
+
+    <!-- Seksi Pilihan Topik -->
+    <section id="topic-selection" class="topic-selection">
+        <h2 class="section-title">Pilih Topik Simulasi</h2>
+        <div class="grid-container">
+            <!-- Card Gerak Parabola -->
+            <article class="card" data-topic="projectile">
+                <img src="images/projectile.png" alt="Gerak Parabola">
+                <h2>Gerak Parabola</h2>
+                <p>Pelajari gerak proyektil dan trajektorinya.</p>
+            </article>
+            <!-- Card Bandul Sederhana -->
+            <article class="card" data-topic="pendulum">
+                <img src="images/pendulum.png" alt="Bandul Sederhana">
+                <h2>Bandul Sederhana</h2>
+                <p>Eksplorasi gerak osilasi bandul.</p>
+            </article>
+            <!-- Card Gerak Harmonik Sederhana -->
+            <article class="card" data-topic="harmonic">
+                <img src="images/harmonic.png" alt="Gerak Harmonik Sederhana">
+                <h2>Gerak Harmonik Sederhana</h2>
+                <p>Pahami gerak pegas dan osilasi.</p>
+            </article>
+            <!-- Card Hukum Newton -->
+            <article class="card" data-topic="newton">
+                <img src="images/newton.png" alt="Hukum Newton">
+                <h2>Hukum Newton</h2>
+                <p>Simulasi gaya dan percepatan.</p>
+            </article>
+            <!-- Card Hukum Termodinamika -->
+            <article class="card" data-topic="thermodynamics">
+                <img src="images/thermo.png" alt="Hukum Termodinamika">
+                <h2>Hukum Termodinamika</h2>
+                <p>Visualisasi proses termodinamika.</p>
+            </article>
+            <!-- Card Optika Geometris -->
+            <article class="card" data-topic="optics">
+                <img src="images/optics.png" alt="Optika Geometris">
+                <h2>Optika Geometris</h2>
+                <p>Simulasi pembiasan dan pemantulan cahaya.</p>
+            </article>
+            <!-- Card Gelombang dan Bunyi -->
+            <article class="card" data-topic="waves">
+                <img src="images/waves.png" alt="Gelombang dan Bunyi">
+                <h2>Gelombang dan Bunyi</h2>
+                <p>Eksplorasi gelombang transversal dan longitudinal.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Seksi Simulasi -->
+    <section id="simulation-container" class="simulation-container hidden">
+        <div id="simulation-content">
+            <!-- Konten simulasi akan dimuat di sini -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p> </p>
+        </div>
+    </footer>
+
+    <!-- Custom JS File Link -->
+    <script src="script.js"></script>
+
+</body>
+</html>

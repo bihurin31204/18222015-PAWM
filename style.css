@@ -1,0 +1,346 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Variabel CSS */
+:root {
+    --biru-tua: #0d47a1;
+    --biru-muda: #1976d2;
+    --gradient: linear-gradient(90deg, var(--biru-tua), var(--biru-muda));
+}
+
+/* Kelas Hidden */
+.hidden {
+    display: none;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 2rem;
+    color: var(--biru-tua);
+    font-weight: bold;
+}
+
+header .logo span {
+    color: var(--biru-muda);
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+}
+
+header .navbar a {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+header .navbar a:hover {
+    color: var(--biru-muda);
+}
+
+#menu {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    padding-top: 7rem; /* Tambahkan padding-top untuk mencegah tumpang tindih */
+}
+
+.home .content {
+    flex: 1 1 40rem;
+}
+
+.home .content h3 {
+    color: var(--biru-tua);
+    font-size: 3rem;
+}
+
+.home .content p {
+    font-size: 1.5rem;
+    color: #666;
+    margin: 1rem 0;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.home .btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: var(--biru-tua);
+    color: #fff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.home .btn:hover {
+    background: var(--gradient);
+}
+
+.home .image {
+    flex: 1 1 40rem;
+    text-align: center;
+}
+
+.home .image img {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Section Title */
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--biru-tua);
+    margin-bottom: 2rem;
+}
+
+/* Topic Selection */
+.topic-selection {
+    padding: 2rem;
+    padding-top: 7rem; /* Tambahkan padding-top untuk mencegah tumpang tindih */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card h2 {
+    font-size: 1.8rem;
+    margin: 1rem 0 0.5rem;
+    color: var(--biru-tua);
+}
+
+.card p {
+    font-size: 1.2rem;
+    color: #666;
+    padding: 0 1rem 1rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Simulation Container */
+.simulation-container {
+    padding: 2rem;
+    padding-top: 7rem; /* Tambahkan padding-top untuk mencegah tumpang tindih */
+}
+
+.controls {
+    margin-bottom: 1em;
+}
+
+.controls label {
+    display: block;
+    margin-top: 1em;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.controls input[type="range"] {
+    width: 100%;
+}
+
+.controls span {
+    display: inline-block;
+    margin-left: 0.5em;
+    font-weight: bold;
+}
+
+#start-btn {
+    margin-top: 1em;
+    padding: 0.75em 1.5em;
+    background-color: var(--biru-tua);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#start-btn:hover {
+    background: var(--gradient);
+}
+
+canvas {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    margin: 1em auto;
+    display: block;
+}
+
+/* CSS untuk Rumus */
+.formula {
+    background-color: #e3f2fd;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 8px;
+    font-size: 1.1em;
+}
+
+.formula h3 {
+    margin-bottom: 0.5em;
+}
+
+.formula p, .formula ul {
+    margin-bottom: 0.5em;
+}
+
+.formula ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--biru-tua);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #bbdefb;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header .navbar {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    header .navbar.active {
+        display: flex;
+    }
+
+    header .navbar a {
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    .home {
+        padding-top: 7rem; /* Pastikan nilai padding-top konsisten */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home .content, .home .image {
+        flex: 1 1 auto;
+        width: 100%;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .controls label {
+        font-size: 1rem;
+    }
+
+    .controls input[type="range"] {
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .home .content h3 {
+        font-size: 2rem;
+    }
+
+    .home .content p {
+        font-size: 1rem;
+    }
+
+    .card h2 {
+        font-size: 1.2rem;
+    }
+
+    .card p {
+        font-size: 1rem;
+    }
+
+    .controls label {
+        font-size: 0.9rem;
+    }
+
+    .controls input[type="range"] {
+        width: 100%;
+    }
+}
